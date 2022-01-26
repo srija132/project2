@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.dot {
+  height: 5px;
+  width: 5px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+}
+.column {
+  float: left;
+  width: 45%;
+  margin-left:40px;
+  margin-bottom: 160px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 50px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #96C7C1;
+  color: black;
+}
+
+.container {
+  padding: 0 16px;
+  
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  margin-left: 120px;
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color:#DED9C4;
+  background-color: #334756;
+  text-align: center;
+  cursor: pointer;
+  width: 50%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+img{
+    border-radius: 50%;
+    margin-left: 70px;
+}
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+<div class="about-section">
+  <h1>About Us</h1>
+  <h3 style="text-align: center;">Hello!
+    This is Rithika and Srija pursuing Bachelor's degree in Computer Science degree at <br><br>Chaitanya Bharathi Institute of Technology,Hyderabad(CBIT). We are currently in our 3rd year of engineering.</h3>
+  <br>
+  <div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+  
+  <br>
+  <h1>Our Moto</h1>
+  <h3 style="text-align: center;">This project is based on the idea of allocating scarce resources to schools from other schools which are available with them<br><br> in a particular time slot, so that all the resources that are required for students growth are equally distributed among all schools.</h3>
+  <br>
+  <div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+  <h1>Our objectives</h1>
+      <h3>Resource allocation systems manage a fixed amount of some given resources,such as playgrounds,library etc <br><br>that must be allocated to users who request them.
+    </h3>
+      <h3>Mainly Schools from the rural backgrounds gets benefitted from this project,as they might not be having all the resources.
+      </h3>
+      <h3>We are following the idea "Each Resource For All" which makes this project useful for schools and students growth.
+    </h3>
+
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="pics/srija.jpeg" alt="Jane"width="400" height="400" >
+      <div class="container">
+        <h2 style="text-align:center">Srija Nayakam</h2>
+        <p class="title" style="text-align:center">Student</p>
+        <p style="text-align:center">nayakamsrija@gmail.com</p>
+        <p style="text-align:center">Roll No. 160119733076</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+ </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="pics/rithika.jpeg" alt="Mike" width="400" height="400">
+      <div class="container">
+        <h2 style="text-align:center">Rama Rithika Kesharaju</h2>
+        <p class="title" style="text-align:center">Student</p>
+        <p style="text-align:center"> rithika66645@gmail.com</p>
+        <p style="text-align:center">Roll No. 160119733073</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  </div>
+ 
+  
+</body>
+</html>

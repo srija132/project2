@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-9">
+    <meta name="viewport"content="width=device-width,initial-scale=1.0">
+    <title>school web template</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <nav>
+            <ul>
+                <li><a href="website.html">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">RESOURCES </a></li>
+                <li><a href="#">STATISTICS</a></li>
+                <li><a href="login_final.php">SIGN UP</a></li>
+                <li><a href="sign_final.php">LOGIN</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+        </nav>
+    <div class="section">
+        <h1>We ensure all round development of students</h1>
+        <div class="features">
+            <button > <a href="sample.php">Contribute Resources</a> </button>
+            <button> <a href="book.php">Book Resource</a></button>
+        </div>
+    </div>
+    </div>
+    <showcase>
+        <h1>AVAILABLE RESOURCES</h1>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <div class="card"style="width: 21rem;">
+                        <div class="inner">
+                            <img src="pics/lib.png" class="card-img-top"  style="margin-left: 0px;"alt="...">
+                        </div>
+                        <div class="card-body text-center">
+                        <h5 class="card-title">Library</h5>
+                        <p class="card-text"> A library is an important source of knowledge to young minds in schools.It develops the important habit of reading among the students. Every school should have a library.</p>
+                        <a href="#" class="btn btn-success">Book here</a>
+                    </div>
+                </div>
+           
+            </div>
+           
+                <div class="col-md-4">
+                    <div class="card" style="width: 21rem;">
+                        <div class="inner">
+                            <img src="pics/LAB.jpg" class="card-img-top" style="margin-left: 0px;" alt="...">
+                        </div>
+                        <div class="card-body text-center">
+                        <h5 class="card-title">Laboratory</h5>
+                        <p class="card-text">A library is an important source of knowledge to young minds in schools.It develops the important habit of reading among the students. Every school should have a library.</p>
+                        <a href="#" class="btn btn-success">Book here</a>
+                    </div>
+                </div>
+        
+        </div>
+            
+                <div class="col-md-4">
+                    <div class="card" style="width: 21rem;">
+                        <div class="inner">
+                            <img src="pics/PROJ.jpg" class="card-img-top"  style="margin-left: 0px;"alt="...">
+                        </div>
+                        <div class="card-body text-center">
+                          <h5 class="card-title">Projectile</h5>
+                          <p class="card-text"> A library is an important source of knowledge to young minds in schools.It develops the important habit of reading among the students. Every school should have a library.</p>
+                          <a href="#" class="btn btn-success">Book here</a>
+                        </div>
+                </div>
+                  
+
+            </div>
+        </div>
+       
+    </showcase>
+    <?php
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "resourceallocation";
+    
+  
+   // Create connection
+ $conn = new mysqli($servername, $username, $password, $dbname);
+ // Check connection
+ if ($conn->connect_error) {
+   die("Connection failed: " . $conn->connect_error);
+ }
+
+if (isset($_POST['contribute'])) 
+  {
+    header("Location: contribute.php");
+  }
+  if (isset($_POST['book'])) 
+  {
+    header("Location: book.php");
+  }
+
+
+} 
+ ?>
+
+
+</body>
+</html>
